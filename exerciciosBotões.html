@@ -9,7 +9,9 @@
 </head>
 
 <body>
+    <button onclick="media()">Gerar Média</button>
     <button onclick="conta()">Gerar Divisão e Potência</button>
+    <button onclick="subtracaoMultiplicacaoDivisaoSoma()">Gerar subtração, multiplicação, divisão e soma!</button>
 
     <script>
         //Op. Aritméticos
@@ -22,7 +24,29 @@
         // ++ Incremento ++n = ele soma antes e ja apresenta. n++, ele incrementa e apresenta só apos digitar o n novamente.
         // -- Decremento.
         
-        
+        // Exercício 01
+        function subtracaoMultiplicacaoDivisaoSoma () {
+            let n1, n2, resultado
+            
+            n1 = (parseInt(prompt("Digite um número: ")))
+            n2 = (parseInt(prompt("Digite outro número: ")))  
+            window.alert(`A subtração é de: ${n1-n2}`)
+            window.alert(`A multiplicação é de: ${n1 * n2}`)
+            window.alert(`A divisão é de: ${n1/n2}`)
+            window.alert(`A soma é de: ${n1+n2}`)
+        }
+
+
+        //Exercício 02
+        function media () {
+            let n1, n2, media
+            
+            n1 = Number(prompt(`Digite um número: `))
+            n2 = Number(prompt(`Digite mais um número: `))
+            media = (n1+n2) / 2
+
+            alert(media)
+        }
         //Exercício 03
         function conta() {
             
